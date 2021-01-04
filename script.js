@@ -5,7 +5,7 @@ let marker = null
 
 // функция принимает позицию - массив с широтой и долготой
 // и сообщение, отображаемое над маркером (tooltip)
-export function getMap(position, tooltip) {
+function getMap(position, tooltip) {
   // если карта не была инициализирована
   if (map === null) {
     // второй аргумент, принимаемый методом setView - это масштаб (zoom)
