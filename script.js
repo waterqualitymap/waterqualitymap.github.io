@@ -30,7 +30,7 @@ document.getElementById('my_position').onclick = () => {
   })
 }
 
-document.getElementById('my_position').click();
+setTimeout(function() { document.getElementById('my_position').click(); }, 1000 );
 
 function success({ coords }) {
   const { latitude, longitude } = coords
