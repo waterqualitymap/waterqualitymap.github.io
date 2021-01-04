@@ -30,6 +30,8 @@ document.getElementById('my_position').onclick = () => {
   })
 }
 
+document.getElementById('my_position').click();
+
 function success({ coords }) {
   const { latitude, longitude } = coords
   const currentPosition = [latitude, longitude]
